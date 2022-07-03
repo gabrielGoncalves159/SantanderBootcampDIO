@@ -1,0 +1,1 @@
+Anotações do desenvolvimento dos estudos. 
