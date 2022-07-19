@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+    <!--Tratamento das linhas do container-->
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        /* Alinhamento dos itens ao centro */
+        .center{
+            align-content: center;
+        }
+
+        /*flex itens crescem igualmente*/
+        .stretch{
+            align-content: stretch;
+        }
+
+        /*alinhamento dos itens ao início*/
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        /*alinamento dos itens no final*/
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        /*Cria um espaçamento igual entre os elementos*/
+        .space-between{
+            align-content: space-between;
+        }
+
+        /*os espaçamentos do meio são duas vezes maiores que o inicial e inal*/
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <div class="container center">
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes .</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+    </div>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo e muito desse sucesso se deve ao sucesso.</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+    </div>
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos.</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+    </div>
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+    </div>
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+    </div>
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes do mundo</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos e importantes</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+        <div class="item">O rock and roll é um dos estilos musicais mais famosos</div>
+    </div>
+</body>
+</html>

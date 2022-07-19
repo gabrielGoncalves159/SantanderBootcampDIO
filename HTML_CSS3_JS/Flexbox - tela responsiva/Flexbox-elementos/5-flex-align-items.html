@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-items</title>
+    <!-- Align-items trata o alinhamento dos items -->
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <!-- Alinha todos o blocos usando como base a margen -->
+    <p>center</p>
+    <section class="container center flex">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 alguem texto para exemplo </div>
+    </section>
+
+    <!-- mexe no tamanho dos blocos de acordo com o maior elemento -->
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <!--Manter todos os blocos na parte superior do container-->
+    <p>flex-start</p>
+    <section class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <!--Manter todos os blocos na parte inferior do container-->
+    <p>flex-end</p>
+    <section class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <!--os elementos crescem de se baseando na primeira linha-->
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item"><br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <h1>column</h1>
+    <!-- Alinha todos o blocos usando como base a margen -->
+    <p>center</p>
+    <section class="container center flex column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 alguem texto para exemplo </div>
+    </section>
+
+    <!-- mexe no tamanho dos blocos de acordo com o maior elemento -->
+    <p>stretch</p>
+    <section class="container stretch column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <!--Manter todos os blocos na parte superior do container-->
+    <p>flex-start</p>
+    <section class="container flex-start column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <!--Manter todos os blocos na parte inferior do container-->
+    <p>flex-end</p>
+    <section class="container flex-end column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <!--os elementos crescem de se baseando na primeira coluna-->
+    <p>baseline</p>
+    <section class="container baseline column">
+        <div class="item"><br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3</div>
+    </section>
+    <!--Alinhamento central na tela dentro do container-->
+    <p>Alinhamento central na tela</p>
+    <section class="container central">
+        <div class="item">Texto para exemplificar o alinhamento
+            central na tela</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-self</title>
+    <!--É a propriedade que estabelece o alinhamento do modo individual sobre
+    um determinado item.-->
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">13</div>
+        <div class="item auto">GGG</div>
+        <div class="item auto">EEEEE</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item center">13</div>
+        <div class="item center">GGG</div>
+        <div class="item end">EEEEE</div>
+    </section>
+</body>
+</html>

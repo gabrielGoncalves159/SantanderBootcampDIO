@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex basis</title>
+    <!--é a propriedade que estabelece o tamanho inicial
+    do item antes das distribuições de espaço restante dentro dele,
+    usando como base o conteúdo interno diposto.-->
+    <style>
+        .flex-container{
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: orangered;
+            color:white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .basis-auto{
+            flex-basis: auto;
+        }
+
+        .basis-0{
+            flex-basis: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <p>auto</p>
+    <div class="flex-container">
+        <div class="item basis-auto fg-1">A</div>
+        <div class="item basis-auto fg-1">BBB</div>
+        <div class="item basis-auto fg-1">C</div>
+        <div class="item basis-auto fg-2">DEF</div>
+    </div>
+
+    <p>0 (zero)</p>
+    <div class="flex-container">
+        <div class="item basis-0 fg-1">A</div>
+        <div class="item basis-0 fg-1">BBB</div>
+        <div class="item basis-0 fg-1">C</div>
+        <div class="item basis-0 fg-1">DEF</div>
+    </div>
+</body>
+</html>
