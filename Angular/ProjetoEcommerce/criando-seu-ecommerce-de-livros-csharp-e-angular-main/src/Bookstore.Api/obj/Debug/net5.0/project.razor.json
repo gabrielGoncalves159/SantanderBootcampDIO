@@ -1,0 +1,19 @@
+{
+  "FilePath": "c:\\Users\\gabriel.ggoncalves\\Downloads\\e-commerce-utilizando-Angular-main\\WorkspaceProjetoAngular\\ProjetoEcommerce\\criando-seu-ecommerce-de-livros-csharp-e-angular-main\\src\\Bookstore.Api\\APIBookstore.Api.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "5.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 900
+  },
+  "RootNamespace": "APIBookstore.Api",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}
